@@ -15,15 +15,19 @@ public class FrogSimulation
 	
 	public boolean simulate()
 	{ 
-		int position =0; 
-		for(int i =0; I<maxHops; i++){
-			if(position>=goalDistance){
-				return true;
-			}
-			else if( position< 0){
-				return false;
-			}
-		
+		int position = 0;
+		for (int count = 0; count < maxHops; count++)
+		{
+		position += hopDistance();
+		if (position >= goalDistance)
+		{
+		return true;
+		}
+		else if (position < 0)
+		{
+		return false;
+		}
+		}
 		return false;
 
 	}

@@ -23,7 +23,7 @@ public class FrogSimulation
 			else if( position< 0){
 				return false;
 			}
-		}
+		
 		return false;
 
 	}
